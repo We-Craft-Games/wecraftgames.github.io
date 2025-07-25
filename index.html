@@ -17,12 +17,14 @@
     header {
       padding: 60px 20px;
       background-color: #000;
-      border-bottom: 4px solid #eee;
+      border-bottom: 5px solid #fff;
     }
 
     h1 {
       font-size: 2em;
       margin-bottom: 20px;
+      color: #fff;
+      padding: 10px;
     }
 
     p {
@@ -45,10 +47,29 @@
       color: #000;
     }
 
+    content {
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center;    /* Centers vertically */
+      min-height: 100vh;      /* Ensures the body takes full viewport height */
+      margin: 0;
+    }
+
+    .centered-div {
+      /* Optional: Set a width and height for the div */
+      width: 200px;
+      height: 150px;
+      background-color: lightgreen;
+    }
     footer {
       margin-top: 40px;
       font-size: 0.6em;
       color: #777;
+      position: absolute;
+      bottom: 1%;
+      width: 100%;
+      background-color: #000;
+      border-top: 5px solid #fff;
     }
 
     @media (max-width: 600px) {
@@ -65,18 +86,22 @@
 </head>
 <body>
   <header>
-    <h1>WE CRAFT GAMES</h1>
-    <p>Retro worlds. Future vision.</p>
-    <p>Launching soon...</p>
+    <div class="titlebox">
+      <h1>WE CRAFT GAMES</h1>
+    </div>
   </header>
 
-  <div class="links">
-    <a href="mailto:shawnkim@wecraftgames.com">📧 Email</a>
-    <!--<a href="" target="_blank">🐦 Twitter</a>-->
-    <a href="https://github.com/wecraftgames" target="_blank">💻 GitHub</a>
+  <div class="content">
+      <p>We Make and Help Make Video Games</p>
   </div>
 
   <footer>
+    <div class="links">
+      <a target="_blank" rel="noopener noreferrer" href="mailto:shawnkim@wecraftgames.com">📧 Email</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/we-craft-games"> 🔗 LinkedIn</a>
+      <!--<a href="" target="_blank">🐦 Twitter</a>-->
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/wecraftgames" target="_blank">💻 GitHub</a>
+    </div>
     &copy; 2025 We Craft Games Inc. All rights reserved.
   </footer>
 </body>
